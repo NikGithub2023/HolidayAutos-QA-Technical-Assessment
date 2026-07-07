@@ -71,7 +71,7 @@ HolidayAutosTestPack/
 
 ## 4. Testing Approach
 
-Before writing any automation, I conducted exploratory testing against the live site to understand how the application behaves, identify stable selectors, and note any quirks in the UI (such as the behaviour of the date picker, dropdown suggestions for locations, and how prices are displayed across pages).
+Before writing any automation, I conducted exploratory testing against the [website](https://www.holidayautos.com/) to understand how the application behaves, identify stable selectors, and note any quirks in the UI (such as the behaviour of the date picker, dropdown suggestions for locations, and how prices are displayed across pages).
 
 Once the application behaviour was understood, test data was picked to keep the tests stable across repeated runs:
 
