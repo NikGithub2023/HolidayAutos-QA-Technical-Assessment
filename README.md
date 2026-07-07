@@ -12,7 +12,7 @@ This repository contains both the **manual test cases** and the **Playwright aut
 
 | Tool / Library | Version | Purpose |
 |---|---|---|
-| .NET | 10.0 | Target framework |
+| .NET | 10.0.3 | Target framework |
 | C# | Latest | Language |
 | NUnit | 4.3.2 | Test framework – attributes, lifecycle hooks, and assertions |
 | NUnit3TestAdapter | 6.2.0 | Bridges NUnit with `dotnet test` for test discovery |
@@ -257,13 +257,14 @@ cd HolidayAutosTestPack
 
 ```bash
 dotnet restore HolidayAutosAutomation/HolidayAutosAutomation.csproj
+dotnet build HolidayAutosAutomation/HolidayAutosAutomation.csproj
 ```
 
 ### Install Playwright browsers
 
 ```bash
 cd HolidayAutosAutomation
-playwright install
+powershell -ExecutionPolicy Bypass -File .\HolidayAutosAutomation\bin\Debug\net10.0\playwright.ps1 install
 ```
 
 ### Run all tests
